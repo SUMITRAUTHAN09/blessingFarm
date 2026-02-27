@@ -1,14 +1,14 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
-import { SERVICES, VENUE_STATS, PROCESS_STEPS } from "@/lib/constants";
-import { ServiceCard }   from "@/components/ui/ServiceCard";
+import { CtaBanner } from "@/components/sections/CtaBanner";
+import { GoldDivider } from "@/components/ui/GoldDivider";
+import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { PageHero }      from "@/components/ui/PageHero";
-import { GoldDivider }   from "@/components/ui/GoldDivider";
-import { CtaBanner }     from "@/components/sections/CtaBanner";
+import { ServiceCard } from "@/components/ui/ServiceCard";
+import { PROCESS_STEPS, SERVICES, VENUE_STATS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
+import { useState } from "react";
 
 type Tab = "All" | "Weddings" | "Events" | "Facilities";
 const TABS: Tab[] = ["All", "Weddings", "Events", "Facilities"];
@@ -51,7 +51,7 @@ export default function ProjectsServicesPage() {
       <section className="dot-pattern py-20 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filtered.map((s) => (
-            <ServiceCard key={s.title} icon={s.icon} title={s.title} desc={s.desc} features={s.features} highlight={s.highlight} />
+            <ServiceCard key={s.title} title={s.title} desc={s.desc} features={s.features} highlight={s.highlight} />
           ))}
         </div>
       </section>
@@ -104,7 +104,7 @@ export default function ProjectsServicesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {PROCESS_STEPS.map(({ step, title, desc }) => (
               <div key={step} className="text-center">
-                <p className="font-cormorant text-6xl text-gold-400/20 font-bold leading-none mb-3">{step}</p>
+                <p className="font-cormorant text-6xl text-gold-400/80 font-bold leading-none mb-3">{step}</p>
                 <h3 className="font-playfair text-lg text-gold-950 mb-3">{title}</h3>
                 <GoldDivider className="w-8 mx-auto mb-3" />
                 <p className="font-montserrat text-[12px] text-gold-700 leading-relaxed">{desc}</p>

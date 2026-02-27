@@ -12,24 +12,23 @@ export const RESORT = {
 } as const;
 
 export const FEATURES = [
-  { icon: "🅿️", label: "Parking" },
-  { icon: "🍽️", label: "Catering" },
-  { icon: "🎊", label: "Decoration" },
-  { icon: "❄️", label: "AC Hall" },
-  { icon: "💒", label: "Wedding Venue" },
+  { id:'01', label: "Parking" },
+  { id:'01', label: "Catering" },
+  { id:'01', label: "Decoration" },
+  { id:'01', label: "AC Hall" },
+  { id:'01', label: "Wedding Venue" },
 ] as const;
 
 export const STATS = [
-  { num: "500+",  label: "Events Hosted" },
-  { num: "5000+", label: "Happy Guests" },
-  { num: "10+",   label: "Years of Excellence" },
+  { num: "50+",  label: "Events Hosted" },
+  { num: "1000+", label: "Happy Guests" },
+  { num: "1+",   label: "Years of Excellence" },
   { num: "100%",  label: "Client Satisfaction" },
 ] as const;
 
 export const SERVICES = [
   {
     category:  "Weddings",
-    icon:      "💒",
     title:     "Grand Wedding Ceremony",
     desc:      "Transform your dream wedding into reality in our beautifully adorned halls. We handle every detail — from floral arrangements to seating, lighting, and guest comfort.",
     features:  ["Bridal Room", "Mandap Setup", "Floral Decor", "Stage Design"],
@@ -37,7 +36,6 @@ export const SERVICES = [
   },
   {
     category:  "Weddings",
-    icon:      "💍",
     title:     "Engagement & Roka",
     desc:      "Celebrate the beginning of a beautiful journey with our intimate yet elegant engagement ceremony setups tailored to your family traditions.",
     features:  ["Ring Ceremony Setup", "Intimate Decor", "Photography Spots", "Welcome Drinks"],
@@ -45,7 +43,6 @@ export const SERVICES = [
   },
   {
     category:  "Events",
-    icon:      "🎂",
     title:     "Birthday Celebrations",
     desc:      "From kids' birthday parties to milestone adult celebrations, we create magical birthday experiences full of joy and cherished memories.",
     features:  ["Themed Decor", "Cake Ceremony", "Entertainment Zone", "Custom Menu"],
@@ -53,7 +50,6 @@ export const SERVICES = [
   },
   {
     category:  "Events",
-    icon:      "🏢",
     title:     "Corporate Events",
     desc:      "Professional conference rooms and banquet halls for seminars, meetings, product launches, and corporate gatherings.",
     features:  ["AV Equipment", "Projector Setup", "Business Catering", "Breakout Spaces"],
@@ -61,7 +57,6 @@ export const SERVICES = [
   },
   {
     category:  "Facilities",
-    icon:      "❄️",
     title:     "AC Hall",
     desc:      "Our fully air-conditioned main hall accommodates large gatherings in complete comfort, with modern acoustics and elegant interiors.",
     features:  ["500+ Capacity", "Modern AV", "Stage & Podium", "Restrooms"],
@@ -69,7 +64,6 @@ export const SERVICES = [
   },
   {
     category:  "Facilities",
-    icon:      "🍽️",
     title:     "Catering Services",
     desc:      "A diverse menu featuring authentic Bihari cuisine, North Indian delicacies, and continental options prepared by expert chefs.",
     features:  ["Live Cooking", "Veg & Non-veg", "Sweets & Desserts", "Beverages"],
@@ -77,7 +71,6 @@ export const SERVICES = [
   },
   {
     category:  "Facilities",
-    icon:      "🎨",
     title:     "Decoration & Design",
     desc:      "Our creative decoration team crafts stunning visual experiences tailored to your event theme and personal preferences.",
     features:  ["Floral Design", "Lighting Setup", "Balloon Decor", "Theme Curation"],
@@ -85,7 +78,6 @@ export const SERVICES = [
   },
   {
     category:  "Facilities",
-    icon:      "🅿️",
     title:     "Parking & Logistics",
     desc:      "Spacious and secure parking facilities to accommodate all your guests, with dedicated staff for seamless entry and exit.",
     features:  ["200+ Vehicles", "Valet Option", "Security", "Easy Access"],
@@ -112,10 +104,10 @@ export const TESTIMONIALS = [
 ] as const;
 
 export const VALUES = [
-  { icon: "🙏", value: "Tradition",  desc: "Honouring the rich cultural heritage of our region in every celebration" },
-  { icon: "✨", value: "Excellence", desc: "Delivering world-class quality in every service and interaction" },
-  { icon: "❤️", value: "Warmth",     desc: "Treating every guest like family — with care, love, and respect" },
-  { icon: "🔒", value: "Trust",      desc: "Building lasting relationships through transparency and reliability" },
+  { id: '01', value: "Tradition",  desc: "Honouring the rich cultural heritage of our region in every celebration" },
+  { id: '02', value: "Excellence", desc: "Delivering world-class quality in every service and interaction" },
+  { id: '03', value: "Warmth",     desc: "Treating every guest like family — with care, love, and respect" },
+  { id: '04', value: "Trust",      desc: "Building lasting relationships through transparency and reliability" },
 ] as const;
 
 export const PROCESS_STEPS = [

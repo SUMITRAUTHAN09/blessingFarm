@@ -1,19 +1,17 @@
-import { RESORT, VALUES, CONTACT_INFO } from "@/lib/constants";
-import { SectionHeader }  from "@/components/ui/SectionHeader";
+import { CtaBanner } from "@/components/sections/CtaBanner";
 import { GoldDivider, GoldLine } from "@/components/ui/GoldDivider";
-import { CtaBanner }      from "@/components/sections/CtaBanner";
-import { MapPin, Phone, Clock } from "lucide-react";
+import { SectionHeader } from "@/components/ui/SectionHeader";
+import { CONTACT_INFO, RESORT, VALUES } from "@/lib/constants";
+import { Clock, MapPin, Phone } from "lucide-react";
 
 const ICON_MAP = { Address: MapPin, "Primary Contact": Phone, "Alternate Contact": Phone, Availability: Clock } as const;
 
 const VISION_MISSION = [
   {
-    icon: "🌟",
     title: "Our Vision",
     text:  "To be Bihar's most celebrated event venue — a place where families create memories that are passed down through generations, rooted in tradition and elevated by excellence.",
   },
   {
-    icon: "🎯",
     title: "Our Mission",
     text:  "To provide exceptional hospitality, world-class facilities, and personalized service that transforms every celebration into an extraordinary, once-in-a-lifetime experience.",
   },
@@ -63,9 +61,8 @@ export default function AboutPage() {
       <section className="dot-pattern py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-            {VISION_MISSION.map(({ icon, title, text }) => (
+            {VISION_MISSION.map(({ title, text }) => (
               <div key={title} className="gold-inset-card bg-gold-50 p-12 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_50px_rgba(201,168,76,0.12)]">
-                <div className="text-4xl mb-5">{icon}</div>
                 <h2 className="font-playfair text-2xl text-gold-950 mb-4">{title}</h2>
                 <GoldLine className="mb-5" />
                 <p className="font-cormorant text-lg leading-relaxed text-gold-800">{text}</p>
@@ -80,9 +77,8 @@ export default function AboutPage() {
             className="mb-14"
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
-            {VALUES.map(({ icon, value, desc }) => (
+            {VALUES.map(({ value, desc }) => (
               <div key={value} className="text-center p-9 bg-gold-100 border border-gold-400/20 transition-all duration-300 hover:-translate-y-1">
-                <div className="text-4xl mb-4">{icon}</div>
                 <h3 className="font-playfair text-xl text-gold-950 mb-3">{value}</h3>
                 <GoldDivider className="w-8 mx-auto mb-3" />
                 <p className="font-montserrat text-[12px] text-gold-700 leading-relaxed">{desc}</p>

@@ -1,8 +1,7 @@
-import { cn } from "@/lib/utils";
 import { GoldLine } from "@/components/ui/GoldDivider";
+import { cn } from "@/lib/utils";
 
 interface ServiceCardProps {
-  icon: string;
   title: string;
   desc: string;
   features: readonly string[];
@@ -10,7 +9,7 @@ interface ServiceCardProps {
   className?: string;
 }
 
-export function ServiceCard({ icon, title, desc, features, highlight = false, className }: ServiceCardProps) {
+export function ServiceCard({ title, desc, features, highlight = false, className }: ServiceCardProps) {
   return (
     <div className={cn(
       "relative p-10 transition-all duration-300 hover:-translate-y-2 overflow-hidden",
@@ -24,7 +23,6 @@ export function ServiceCard({ icon, title, desc, features, highlight = false, cl
           Popular
         </span>
       )}
-      <div className="text-4xl mb-5">{icon}</div>
       <h3 className={cn("font-playfair text-xl mb-3", highlight ? "text-white" : "text-gold-950")}>{title}</h3>
       <GoldLine className="mb-4" />
       <p className={cn("text-sm leading-relaxed mb-6", highlight ? "text-white/70" : "text-gold-700")}>{desc}</p>
