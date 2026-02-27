@@ -21,7 +21,7 @@ export const FEATURES = [
 
 export const STATS = [
   { num: "50+",  label: "Events Hosted" },
-  { num: "1000+", label: "Happy Guests" },
+  { num: "500+", label: "Happy Guests" },
   { num: "1+",   label: "Years of Excellence" },
   { num: "100%",  label: "Client Satisfaction" },
 ] as const;
