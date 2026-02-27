@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { SERVICES } from "@/lib/constants";
-import { ServiceCard } from "@/components/ui/ServiceCard";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { ServiceCard } from "@/components/ui/ServiceCard";
+import { SERVICES } from "@/lib/constants";
+import Link from "next/link";
 
 export function ServicesPreview() {
   const preview = SERVICES.slice(0, 6);
@@ -15,7 +15,7 @@ export function ServicesPreview() {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {preview.map((s) => (
-            <ServiceCard key={s.title} icon={s.icon} title={s.title} desc={s.desc} features={s.features} highlight={s.highlight} />
+            <ServiceCard key={s.title} title={s.title} desc={s.desc} features={s.features} highlight={s.highlight} />
           ))}
         </div>
         <div className="text-center mt-14">

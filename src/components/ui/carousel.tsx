@@ -5,7 +5,7 @@ import useEmblaCarousel, {
 } from "embla-carousel-react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import * as React from "react";
-
+// changing the button to Button for solve develoyment
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
