@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Wedding venue in Sitamarhi Bihar",
     "Marriage garden in Sitamarhi",
     "Wedding resort in Bihar",
+    "Wedding farm in Bihar",
     "Farmhouse for wedding in Sitamarhi",
     "Outdoor wedding venue in Bihar",
     "Event venue in Sitamarhi",
